@@ -17,11 +17,6 @@ const dialog = [
     },
     {
         type: 'input',
-        name: 'table of contents',
-        message: 'Please provide a table of contents.'
-    },
-    {
-        type: 'input',
         name: 'installation',
         message: 'Please provide installation instructions.'
     },
