@@ -68,3 +68,5 @@ function readmeGenerator(data) {
   
   `;
 }
+
+module.exports = readmeGenerator;
