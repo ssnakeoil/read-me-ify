@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown');
+const readmeGenerator = require('./utils/readmeGenerator.js');
 
 const dialog = [
     {
@@ -67,9 +67,9 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(dialog).then((inquirerResponses) => {
         console.log('Generating README...');
-        writeToFile('README.md', generateMarkdown({...inquirerResponses}));
+        writeToFile('README.md', readmeGenerator({...inquirerResponses}));
     })
 }
 
-// function call to initialize program
+// initializes program on startup
 init();
