@@ -27,7 +27,7 @@ And follow the prompts!
 - [License Badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
 ## Screenshots
-![](../read-me-ify/readmeify-sc.png)
+![](readmeify-sc.png)
 
 ![](https://i.gyazo.com/8ca332ce31fc2543636c6d5d4a9eeeee.gif)
   
