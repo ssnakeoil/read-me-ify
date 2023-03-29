@@ -19,7 +19,7 @@ const dialog = [
         type: 'input',
         name: 'table of contents',
         message: 'Please provide a table of contents.'
-    }
+    },
     {
         type: 'input',
         name: 'installation',
@@ -57,3 +57,19 @@ const dialog = [
         message: 'Please provide your email address.'
     }
 ];
+
+// calling fs to write file utilizing user input
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
+
+// initializes program
+function init() {
+    inquirer.prompt(dialog).then((inquirerResponses) => {
+        console.log('Generating README...');
+        writeToFile('README.md', generateMarkdown({...inquirerResponses}));
+    })
+}
+
+// function call to initialize program
+init();
