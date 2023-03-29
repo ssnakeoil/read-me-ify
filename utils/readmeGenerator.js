@@ -1,3 +1,13 @@
+// returns license badge if provided license, otherwise returns an empty string
+function renderLicense(license) {
+    if (license !== 'None') {
+      return `## License
+  
+  This project is licensed under the ${license} license.`;
+    }
+    return '';
+  }
+  
 // Create a function to format the README file
 function readmeGenerator(data) {
   return `# ${data.title}
